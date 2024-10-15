@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulário de Login -->
+        <div id="loginForm" class="form-container active">
+            <h2>Login</h2>
+            <form onsubmit="login(event)">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <div class="toggle-link">
+                Não tem uma conta? <a href="#" onclick="toggleForms()">Cadastre-se</a>
+            </div>
+        </div>
+
+        <!-- Formulário de Cadastro -->
+        <div id="signupForm" class="form-container">
+            <h2>Cadastro</h2>
+            <form onsubmit="register(event)">
+                <input type="text" id="signupName" placeholder="Nome Completo" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Senha" required>
+                <input type="password" id="signupConfirmPassword" placeholder="Confirme a Senha" required>
+                <button type="submit">Cadastrar-se</button>
+            </form>
+            <div class="toggle-link">
+                Já tem uma conta? <a href="#" onclick="toggleForms()">Faça login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

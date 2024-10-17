@@ -144,11 +144,11 @@ body {
 }
 
 footer {
-    text-align: center;
+    text-align:center;
     padding: 20px;
     background-color: #2c3e50; 
     color: white;
-    position: relative;
+    position:fixed;
     bottom: 0;
     width: 100%;
 }

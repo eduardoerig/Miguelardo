@@ -47,7 +47,6 @@ body {
 /* Imagem ao lado do formulário */
 .image-container {
     max-width: 400px;
-    margin-right: 20px;
     flex-shrink: 0; /* Garante que a imagem não diminua */
 }
 

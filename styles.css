@@ -13,9 +13,27 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f5f5f5; /* Cinza claro */
+    background-image: url(fundoboutique.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Container */
+/* Section que contém o formulário e a imagem */
+.login-section {
+    display: flex;
+    flex-direction: row; /* Garante que os itens fiquem lado a lado */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Container do formulário */
 .container {
     background-color: #ffffff; /* Branco */
     border-radius: 12px;
@@ -24,6 +42,18 @@ body {
     padding: 30px;
     text-align: center;
     transition: all 0.3s ease;
+}
+
+/* Imagem ao lado do formulário */
+.image-container {
+    max-width: 400px;
+    margin-right: 20px;
+    flex-shrink: 0; /* Garante que a imagem não diminua */
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 12px;
 }
 
 /* Títulos */

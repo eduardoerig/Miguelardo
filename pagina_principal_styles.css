@@ -66,8 +66,14 @@ body {
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: #2980b9;
+.nav-links li i{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.nav-links li a:hover{
+    color: black;
 }
 
 .login-btn a {
